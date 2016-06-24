@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ui.css with Pure.css</title>
+
+    <!-- UI CSS -->
+    <link rel="stylesheet" href="../src/ui.css.css">
+
+    <!-- Pure CSS -->
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+
+    <!-- Pure CSS Layout and Example Files -->
+    <link rel="stylesheet" href="css/pure-blog-layout.css">
+    <link rel="stylesheet" href="css/pure-example-styles.css">
+
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+    <!-- Bootstrap Code CSS -->
+    <link rel="stylesheet" href="css/bootstrap-code.css">
+</head>
+<body>
+
+
+<div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4">
+        <div class="header">
+            <h1 class="brand-title">Example of ui.css</h1>
+            <h2 class="brand-tagline">using Pure.css</h2>
+            <h4 class="brand-tagline">Animations by Animate.css</h4>
+            <h4 class="brand-tagline">Code style from Bootstrap</h4>
+
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a class="pure-button" href="https://github.com/garhbod/ui.css">ui.css</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="pure-button" href="http://purecss.io">Pure.css</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="pure-button" href="http://purecss.io">Animate.css</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="content pure-u-1 pure-u-md-3-4">
+        <div>
+            <!-- A wrapper for all the blog posts -->
+            <div class="posts">
+                <!-- A single blog post -->
+                <section class="post">
+                    <header class="post-header">
+                        <h2 class="post-title">Introduction to ui.css</h2>
+                        <p class="post-meta">
+                            By <a href="#" class="post-author">Ryan Worth</a>
+                        </p>
+                    </header>
+
+                    <div class="post-description">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        </p>
+                    </div>
+                </section>
+            </div>
+
+            <div class="posts">
+                <h1 class="content-subhead">Hover Elements</h1>
+
+                <section class="post">
+                    <header class="post-header">
+                        <h2 class="post-title">Tooltip</h2>
+                    </header>
+
+                    <div class="post-description">
+
+                        <p>
+                            Tooltip's are simply an element that is shown when the parent is being hovered
+                        </p>
+                        <p>
+                            <button class="ui-css-hover ui-css-tooltip pure-button pure-button-primary">
+                                <span class="ui-css-target animated pulse">This is a tooltip</span>
+                                Tooltip Left
+                            </button>
+                        </p>
+                        <p>
+                            <button class="ui-css-hover ui-css-tooltip ui-css-tooltip-right pure-button">
+                                <span class="ui-css-target animated tada">This is at the bottom</span>
+                                Tooltip Right
+                            </button>
+                        </p>
+                        <p>
+                            Code
+                        <pre>Test</pre>
+                        </p>
+                    </div>
+                </section>
+            </div>
+
+            <div class="posts">
+                <h1 class="content-subhead">Toggle Elements</h1>
+
+                <section class="post">
+                    <header class="post-header">
+                        <h2 class="post-title">Dialog <small>(i.e. Dialogue or Modal)</small></h2>
+                    </header>
+
+                    <div class="post-description">
+
+                        <p>
+                            Dialog is a popup or prompt cast over the content of the page.
+                        </p>
+                        <p>
+                            <label class="pure-button pure-button-primary" for="dialogExample1">Dialog Example</label>
+                            <label class="pure-button" for="dialogExample2">Complex Example</label>
+                        </p>
+                        <p>
+                            Code
+                            <pre>Test</pre>
+                        </p>
+                    </div>
+                </section>
+
+                <section class="post">
+                    <header class="post-header">
+                        <h2 class="post-title">Dropdown</small></h2>
+                    </header>
+
+                    <div class="post-description">
+
+                        <p>
+                            Dropdown is a popup or prompt cast over the content of the page.
+                        </p>
+                        <p>
+                            <label class="pure-button pure-button-primary" for="dialogExample1">Dropdown Example</label>
+                        </p>
+                        <p>
+                            Code
+                            <pre>Test</pre>
+                        </p>
+                    </div>
+                </section>
+
+                <section class="post">
+                    <header class="post-header">
+                        <h2 class="post-title">Popover</h2>
+                    </header>
+
+                    <div class="post-description">
+
+                        <p>
+                            Popover's are similar to a Tooltip but are shown when the parent is toggled rather than hovered
+                        </p>
+                        <p>
+                            <label class="ui-css-toggle ui-css-popover pure-button pure-button-primary">
+                                <input id="dialogExample2" type="checkbox" />
+                                <span class="ui-css-target animated pulse">This is a popover</span>
+                                Tooltip Left
+                            </label>
+                        </p>
+                        <p>
+                            <label class="ui-css-toggle ui-css-popover ui-css-popover-right pure-button">
+                                <input id="dialogExample2" type="checkbox" />
+                                <span class="ui-css-target animated tada">This is at the bottom</span>
+                                Tooltip Right
+                            </label>
+                        </p>
+                        <p>
+                            Code
+                        <pre>Test</pre>
+                        </p>
+                    </div>
+                </section>
+            </div>
+
+            <div class="posts">
+                <h1 class="content-subhead">Switch Elements</h1>
+
+                <section class="post">
+                    <header class="post-header">
+                        <h2 class="post-title">Tabs</h2>
+                    </header>
+
+                    <div class="post-description">
+
+                        <p>
+                            Dialog is a popup or prompt cast over the content of the page.
+                        </p>
+                        <p>
+                            <label class="pure-button" for="tabsExampleTab1">Tab 1</label>
+                            <label class="pure-button" for="tabsExampleTab2">Tab 2</label>
+                            <label class="pure-button" for="tabsExampleTab3">Tab 3</label>
+                            <div class="ui-css-switch ui-css-tabs">
+                                <input id="tabsExampleTab1" name="tabsExample1" type="radio" checked value />
+                                <div class="ui-css-target animated fadeIn">
+                                    <h2>
+                                        Tab 1
+                                    </h2>
+                                    <hr />
+                                    <p>
+                                        A simple example of a dialog working entirely through css.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="ui-css-switch ui-css-tabs">
+                                <input id="tabsExampleTab2" name="tabsExample1" type="radio" value />
+                                <div class="ui-css-target animated fadeIn">
+                                    <h2>
+                                        Tab 2
+                                    </h2>
+                                    <hr />
+                                    <p>
+                                        A simple example of a dialog working entirely through css.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="ui-css-switch ui-css-tabs">
+                                <input id="tabsExampleTab3" name="tabsExample1" type="radio" value />
+                                <div class="ui-css-target animated fadeIn">
+                                    <h2>
+                                        Tab 3
+                                    </h2>
+                                    <hr />
+                                    <p>
+                                        A simple example of a dialog working entirely through css.
+                                    </p>
+                                </div>
+                            </div>
+                        </p>
+                        <p>
+                            Code
+                            <pre>Test</pre>
+                        </p>
+                    </div>
+                </section>
+
+                <section class="post">
+                    <header class="post-header">
+                        <h2 class="post-title">Collapse</h2>
+                    </header>
+
+                    <div class="post-description">
+
+                        <p>
+                            Dialog is a popup or prompt cast over the content of the page.
+                        </p>
+                        <p>
+                            <label class="pure-button pure-button-primary" for="dialogExample1">Dialog Example</label>
+                            <label class="pure-button" for="dialogExample2">Complex Example</label>
+                        </p>
+                        <p>
+                            Code
+                            <pre>Test</pre>
+                        </p>
+                    </div>
+                </section>
+            </div>
+
+            <div class="footer">
+                <div class="pure-menu pure-menu-horizontal">
+                    <ul>
+                        <!--<li class="pure-menu-item"><a href="http://purecss.io/" class="pure-menu-link">About</a></li>-->
+                        <!--<li class="pure-menu-item"><a href="http://twitter.com/yuilibrary/" class="pure-menu-link">Twitter</a></li>-->
+                        <li class="pure-menu-item"><a href="https://github.com/garhbod/ui.css" class="pure-menu-link">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="ui-css-toggle ui-css-dialog">
+    <input id="dialogExample1" type="checkbox" />
+    <div class="ui-css-target animated fadeIn">
+        <div class="animated zoomInDown small-dialog">
+            <h2>
+                Example Dialog
+            </h2>
+            <hr />
+            <p>
+                A simple example of a dialog working entirely through css.
+            </p>
+            <hr />
+            <label class="pure-button" for="dialogExample1">Close</label>
+        </div>
+    </div>
+</div>
+
+<div class="ui-css-toggle ui-css-dialog">
+    <input id="dialogExample2" type="checkbox" />
+    <div class="ui-css-target animated fadeIn">
+        <div class="animated zoomInDown small-dialog">
+            <h2>
+                Complex Dialog
+            </h2>
+            <hr />
+            <p>
+                You can nest as many dialogs as you like.
+            </p>
+            <hr />
+            <label class="pure-button pure-button-primary" for="dialogExample3">Open another</label>
+            <label class="pure-button" for="dialogExample2">Close</label>
+        </div>
+        <div class="ui-css-toggle ui-css-dialog">
+            <input id="dialogExample3" type="checkbox" />
+            <div class="ui-css-target">
+                <div class="small-dialog">
+                    <h2>
+                        Another Dialog
+                    </h2>
+                    <p>
+                        This dialog has no animation set.
+                    </p>
+                    <hr />
+                    <label class="pure-button" for="dialogExample3">Close</label>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

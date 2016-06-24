@@ -1,0 +1,64 @@
+/* UI Toggle Styles */
+.ui-css-toggle > input,
+.ui-css-toggle > .ui-css-target,
+.ui-css-switch > input,
+.ui-css-switch > .ui-css-target {
+    display: none;
+}
+.ui-css-toggle > input:checked + .ui-css-target,
+.ui-css-switch > input:checked + .ui-css-target {
+    display: block;
+}
+
+/* UI Dialog Styles */
+.ui-css-dialog > .ui-css-target {
+    position: fixed;
+    z-index: 1001;
+}
+.ui-css-dialog > .ui-css-target::before {
+    content: " ";
+    position: fixed;
+
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+    background: rgba(20, 20, 20, 0.4);
+
+    z-index: -1;
+}
+.ui-css-dialog > .ui-css-target > div {
+    position: fixed;
+}
+
+/* UI Hover Styles */
+.ui-css-hover > .ui-css-target {
+    display: none;
+}
+.ui-css-hover:hover > .ui-css-target {
+    display: block;
+}
+
+/* UI Tooltip & Popover Styles */
+.ui-css-tooltip,
+.ui-css-popover {
+    position: relative;
+}
+.ui-css-tooltip > .ui-css-target,
+.ui-css-popover > .ui-css-target {
+    position: absolute;
+    z-index: 10;
+
+    top: calc(50% - 16px);
+    right: calc(100% + 6px);
+    padding: 6px;
+
+    color: #fff;
+    background: #333;
+}
+.ui-css-tooltip.ui-css-tooltip-right > .ui-css-target,
+.ui-css-popover.ui-css-popover-right > .ui-css-target {
+    right: auto;
+    left: calc(100% + 6px);
+}
